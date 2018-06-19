@@ -1,0 +1,16 @@
+*.mod
+*.cmake
+moc_*
+*.moc
+*.qrc.depends
+*automoc*
+CMakeCache.txt
+CMakeFiles
+DartConfiguration.tcl
+Makefile
+bin/*
+lib/*
+include/*
+Testing/
+test/*
+ui_*.h
