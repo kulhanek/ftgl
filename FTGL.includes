@@ -1,0 +1,5 @@
+src/lib/ftgl/FTFont
+src/lib/ftgl/FTGL
+src/lib/ftgl/FTGlyph
+src/lib/ftgl/FTLayout
+src/lib/ftgl
