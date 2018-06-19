@@ -4,3 +4,6 @@ FTGL is a free cross-platform Open Source C++ library that uses Freetype2 to sim
 ## Original source
 [https://sourceforge.net/projects/ftgl/](https://sourceforge.net/projects/ftgl/)
 
+## Dependencies
+* libfreetype6-dev
+* OpenGL
