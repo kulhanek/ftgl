@@ -33,16 +33,14 @@ ENDIF(NOT DEVELOPMENT_ROOT)
 # ==============================================================================
 
 # FreeType -------------------------------------------
-SET(FT2_ROOT ${DEVELOPMENT_ROOT}/thirdparty/freetype/2.4.10)
-INCLUDE_DIRECTORIES(${FT2_ROOT}/include)
-LINK_DIRECTORIES(${FT2_ROOT}/lib)
-SET(FT2_LIB ft)
+FIND_PACKAGE(Freetype REQUIRED)
+INCLUDE_DIRECTORIES(${FREETYPE_INCLUDE_DIRS})
 
 # opengl library is required
 FIND_PACKAGE(OpenGL REQUIRED)
 
 SET(SYSTEM_LIBS
-    ${FT2_LIB}
+    ${FREETYPE_LIBRARIES}
     ${OPENGL_LIBRARIES}
     )
 
@@ -80,8 +78,8 @@ IF(NOT DEFINED COMPOSITE_PROJECT)
     SET(CMAKE_CXX_FLAGS_RELEASE "-O2")
     SET(CMAKE_CXX_FLAGS_DEBUG "-O0 -g -Wall -Wundef -Wno-long-long")
 
-    #SET(CMAKE_BUILD_TYPE Release)
-    SET(CMAKE_BUILD_TYPE Debug)
+    SET(CMAKE_BUILD_TYPE Release)
+    #SET(CMAKE_BUILD_TYPE Debug)
 ENDIF(NOT DEFINED COMPOSITE_PROJECT)
 
 # ==============================================================================

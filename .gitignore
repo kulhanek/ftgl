@@ -8,9 +8,9 @@ CMakeCache.txt
 CMakeFiles
 DartConfiguration.tcl
 Makefile
-bin/*
-lib/*
-include/*
 Testing/
 test/*
 ui_*.h
+/bin/
+/lib/
+/include/
